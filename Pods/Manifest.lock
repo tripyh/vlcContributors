@@ -1,0 +1,42 @@
+PODS:
+  - Alamofire (5.5.0)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - ReactiveCocoa (12.0.0):
+    - ReactiveSwift (~> 7.0)
+  - ReactiveSwift (7.0.0)
+  - SDWebImage (5.12.3):
+    - SDWebImage/Core (= 5.12.3)
+  - SDWebImage/Core (5.12.3)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - Alamofire
+  - Moya
+  - ReactiveCocoa
+  - ReactiveSwift
+  - SDWebImage
+  - SVProgressHUD
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Moya
+    - ReactiveCocoa
+    - ReactiveSwift
+    - SDWebImage
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  ReactiveCocoa: 5d10386f0ce09f922006efbf784881c5fade27c5
+  ReactiveSwift: 48c4b9d3b497e8dd20b10300bb1a28ff93550f13
+  SDWebImage: 53179a2dba77246efa8a9b85f5c5b21f8f43e38f
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: 32bc2d690c7e9949671e6760d5f45105cad15ac9
+
+COCOAPODS: 1.11.2
