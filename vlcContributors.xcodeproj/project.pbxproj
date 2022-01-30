@@ -17,6 +17,12 @@
 		04CA8A6D27A726100088C177 /* Config+server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA8A6C27A726100088C177 /* Config+server.swift */; };
 		04CA8A7127A726B10088C177 /* ContributorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA8A7027A726B10088C177 /* ContributorManager.swift */; };
 		04CA8A7427A727970088C177 /* Contributor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA8A7327A727970088C177 /* Contributor.swift */; };
+		04CA8A7727A72A0C0088C177 /* ContributorListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA8A7627A72A0C0088C177 /* ContributorListViewModel.swift */; };
+		04CA8A7A27A72A440088C177 /* ContributorListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA8A7927A72A440088C177 /* ContributorListCell.swift */; };
+		04CA8A7C27A72A6D0088C177 /* ContributorListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04CA8A7B27A72A6D0088C177 /* ContributorListCell.xib */; };
+		04CA8A8027A72DBC0088C177 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA8A7F27A72DBC0088C177 /* BaseTableViewCell.swift */; };
+		04CA8A8327A72DE90088C177 /* NibLoadableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA8A8227A72DE90088C177 /* NibLoadableViewProtocol.swift */; };
+		04CA8A8527A72E140088C177 /* ReusableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA8A8427A72E140088C177 /* ReusableViewProtocol.swift */; };
 		1F5E35E75A2F9FE0FA099A66 /* Pods_vlcContributors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC6967C4DFB9494D35AE1688 /* Pods_vlcContributors.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +40,12 @@
 		04CA8A6C27A726100088C177 /* Config+server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Config+server.swift"; sourceTree = "<group>"; };
 		04CA8A7027A726B10088C177 /* ContributorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorManager.swift; sourceTree = "<group>"; };
 		04CA8A7327A727970088C177 /* Contributor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contributor.swift; sourceTree = "<group>"; };
+		04CA8A7627A72A0C0088C177 /* ContributorListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorListViewModel.swift; sourceTree = "<group>"; };
+		04CA8A7927A72A440088C177 /* ContributorListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorListCell.swift; sourceTree = "<group>"; };
+		04CA8A7B27A72A6D0088C177 /* ContributorListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContributorListCell.xib; sourceTree = "<group>"; };
+		04CA8A7F27A72DBC0088C177 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		04CA8A8227A72DE90088C177 /* NibLoadableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableViewProtocol.swift; sourceTree = "<group>"; };
+		04CA8A8427A72E140088C177 /* ReusableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableViewProtocol.swift; sourceTree = "<group>"; };
 		CC6967C4DFB9494D35AE1688 /* Pods_vlcContributors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vlcContributors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E58BF31716C59089EC8A2D55 /* Pods-vlcContributors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vlcContributors.release.xcconfig"; path = "Target Support Files/Pods-vlcContributors/Pods-vlcContributors.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,6 +105,8 @@
 		04CA8A5C27A721400088C177 /* ContributorList */ = {
 			isa = PBXGroup;
 			children = (
+				04CA8A7827A72A290088C177 /* Cells */,
+				04CA8A7527A729F00088C177 /* ViewModel */,
 				04CA8A5D27A7216C0088C177 /* ContributorListVC.swift */,
 				04CA8A5F27A721920088C177 /* ContributorListVC.xib */,
 			);
@@ -118,7 +132,9 @@
 		04CA8A6427A7254C0088C177 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				04CA8A7D27A72D880088C177 /* Base */,
 				04CA8A6527A725540088C177 /* Networking */,
+				04CA8A8127A72DD20088C177 /* Protocols */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -172,6 +188,48 @@
 				04CA8A7327A727970088C177 /* Contributor.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		04CA8A7527A729F00088C177 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				04CA8A7627A72A0C0088C177 /* ContributorListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		04CA8A7827A72A290088C177 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				04CA8A7927A72A440088C177 /* ContributorListCell.swift */,
+				04CA8A7B27A72A6D0088C177 /* ContributorListCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		04CA8A7D27A72D880088C177 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				04CA8A7E27A72D9E0088C177 /* Cell */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		04CA8A7E27A72D9E0088C177 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				04CA8A7F27A72DBC0088C177 /* BaseTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		04CA8A8127A72DD20088C177 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				04CA8A8227A72DE90088C177 /* NibLoadableViewProtocol.swift */,
+				04CA8A8427A72E140088C177 /* ReusableViewProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		727F56E89BFEC8078860789E /* Frameworks */ = {
@@ -254,6 +312,7 @@
 				04CA8A5427A71C7C0088C177 /* LaunchScreen.storyboard in Resources */,
 				04CA8A5127A71C7C0088C177 /* Assets.xcassets in Resources */,
 				04CA8A6027A721920088C177 /* ContributorListVC.xib in Resources */,
+				04CA8A7C27A72A6D0088C177 /* ContributorListCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,10 +367,15 @@
 			files = (
 				04CA8A6827A7258D0088C177 /* ContributorService.swift in Sources */,
 				04CA8A6A27A725D70088C177 /* NetworkProvider.swift in Sources */,
+				04CA8A7A27A72A440088C177 /* ContributorListCell.swift in Sources */,
 				04CA8A7427A727970088C177 /* Contributor.swift in Sources */,
 				04CA8A4827A71C780088C177 /* AppDelegate.swift in Sources */,
+				04CA8A8527A72E140088C177 /* ReusableViewProtocol.swift in Sources */,
+				04CA8A7727A72A0C0088C177 /* ContributorListViewModel.swift in Sources */,
+				04CA8A8327A72DE90088C177 /* NibLoadableViewProtocol.swift in Sources */,
 				04CA8A5E27A7216C0088C177 /* ContributorListVC.swift in Sources */,
 				04CA8A6D27A726100088C177 /* Config+server.swift in Sources */,
+				04CA8A8027A72DBC0088C177 /* BaseTableViewCell.swift in Sources */,
 				04CA8A7127A726B10088C177 /* ContributorManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
