@@ -23,6 +23,7 @@
 		04CA8A8027A72DBC0088C177 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA8A7F27A72DBC0088C177 /* BaseTableViewCell.swift */; };
 		04CA8A8327A72DE90088C177 /* NibLoadableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA8A8227A72DE90088C177 /* NibLoadableViewProtocol.swift */; };
 		04CA8A8527A72E140088C177 /* ReusableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA8A8427A72E140088C177 /* ReusableViewProtocol.swift */; };
+		04CA8A8827A72F500088C177 /* UITableView+register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA8A8727A72F500088C177 /* UITableView+register.swift */; };
 		1F5E35E75A2F9FE0FA099A66 /* Pods_vlcContributors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC6967C4DFB9494D35AE1688 /* Pods_vlcContributors.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		04CA8A7F27A72DBC0088C177 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		04CA8A8227A72DE90088C177 /* NibLoadableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableViewProtocol.swift; sourceTree = "<group>"; };
 		04CA8A8427A72E140088C177 /* ReusableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableViewProtocol.swift; sourceTree = "<group>"; };
+		04CA8A8727A72F500088C177 /* UITableView+register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+register.swift"; sourceTree = "<group>"; };
 		CC6967C4DFB9494D35AE1688 /* Pods_vlcContributors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vlcContributors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E58BF31716C59089EC8A2D55 /* Pods-vlcContributors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vlcContributors.release.xcconfig"; path = "Target Support Files/Pods-vlcContributors/Pods-vlcContributors.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				04CA8A7D27A72D880088C177 /* Base */,
+				04CA8A8627A72F280088C177 /* Extensions */,
 				04CA8A6527A725540088C177 /* Networking */,
 				04CA8A8127A72DD20088C177 /* Protocols */,
 			);
@@ -230,6 +233,14 @@
 				04CA8A8427A72E140088C177 /* ReusableViewProtocol.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		04CA8A8627A72F280088C177 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				04CA8A8727A72F500088C177 /* UITableView+register.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		727F56E89BFEC8078860789E /* Frameworks */ = {
@@ -375,6 +386,7 @@
 				04CA8A8327A72DE90088C177 /* NibLoadableViewProtocol.swift in Sources */,
 				04CA8A5E27A7216C0088C177 /* ContributorListVC.swift in Sources */,
 				04CA8A6D27A726100088C177 /* Config+server.swift in Sources */,
+				04CA8A8827A72F500088C177 /* UITableView+register.swift in Sources */,
 				04CA8A8027A72DBC0088C177 /* BaseTableViewCell.swift in Sources */,
 				04CA8A7127A726B10088C177 /* ContributorManager.swift in Sources */,
 			);

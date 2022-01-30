@@ -8,7 +8,7 @@
 import UIKit
 import SDWebImage
 
-class ContributorListCell: UITableViewCell {
+class ContributorListCell: BaseTableViewCell {
     
     // MARK: - Private properties
     
@@ -29,11 +29,14 @@ class ContributorListCell: UITableViewCell {
     
     // MARK: - Configure
     
-    func configure(_ contributor: Contributor) {
-        nameLabel.text = contributor.login
-        idLabel.text = String(contributor.id)
+    func configure(_ contributor: Contributor?) {
+        nameLabel.text = contributor?.login
         
-        if let avatarLink = contributor.avatarUrl,
+        if let idActual = contributor?.id {
+            idLabel.text = String(idActual)
+        }
+        
+        if let avatarLink = contributor?.avatarUrl,
            let avatarUrl = URL(string: avatarLink) {
             avatarImage.sd_setImage(with: avatarUrl)
         }

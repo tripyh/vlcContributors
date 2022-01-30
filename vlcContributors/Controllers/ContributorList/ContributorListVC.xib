@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContributorListVC" customModule="vlcContributors" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="p8B-qQ-UnL" id="Jlf-yA-bR5"/>
                 <outlet property="view" destination="iN0-l3-epB" id="lRJ-Lj-EhU"/>
             </connections>
         </placeholder>
@@ -18,8 +19,24 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="p8B-qQ-UnL">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="xMH-Vp-6wu"/>
+                        <outlet property="delegate" destination="-1" id="LeK-BH-iNx"/>
+                    </connections>
+                </tableView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="p8B-qQ-UnL" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Cfy-b7-dfT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="p8B-qQ-UnL" secondAttribute="trailing" id="Tmc-YP-E2D"/>
+                <constraint firstItem="p8B-qQ-UnL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="qdu-P4-jvd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="p8B-qQ-UnL" secondAttribute="bottom" id="xLD-Qe-hde"/>
+            </constraints>
             <point key="canvasLocation" x="139" y="81"/>
         </view>
     </objects>
