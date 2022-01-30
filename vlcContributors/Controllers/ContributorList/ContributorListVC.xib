@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContributorListVC" customModule="vlcContributors" customModuleProvider="target">
             <connections>
+                <outlet property="loaderView" destination="dxi-sC-wNs" id="Y0l-Rf-1a2"/>
                 <outlet property="tableView" destination="p8B-qQ-UnL" id="Jlf-yA-bR5"/>
                 <outlet property="view" destination="iN0-l3-epB" id="lRJ-Lj-EhU"/>
             </connections>
@@ -28,12 +29,21 @@
                         <outlet property="delegate" destination="-1" id="LeK-BH-iNx"/>
                     </connections>
                 </tableView>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="dxi-sC-wNs">
+                    <rect key="frame" x="188.5" y="434.5" width="37" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="kzA-RB-sjs"/>
+                        <constraint firstAttribute="width" constant="37" id="rRG-S1-cwu"/>
+                    </constraints>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="p8B-qQ-UnL" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Cfy-b7-dfT"/>
+                <constraint firstItem="dxi-sC-wNs" firstAttribute="centerY" secondItem="p8B-qQ-UnL" secondAttribute="centerY" id="Hbg-YP-bRI"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="p8B-qQ-UnL" secondAttribute="trailing" id="Tmc-YP-E2D"/>
+                <constraint firstItem="dxi-sC-wNs" firstAttribute="centerX" secondItem="p8B-qQ-UnL" secondAttribute="centerX" id="ZJp-cW-fV5"/>
                 <constraint firstItem="p8B-qQ-UnL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="qdu-P4-jvd"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="p8B-qQ-UnL" secondAttribute="bottom" id="xLD-Qe-hde"/>
             </constraints>

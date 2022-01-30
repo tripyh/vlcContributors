@@ -6,14 +6,25 @@
 //
 
 import UIKit
+import ReactiveCocoa
+import ReactiveSwift
+import SVProgressHUD
 
 class ContributorListVC: UIViewController {
     
     // MARK: - Private properties
     
     @IBOutlet private var tableView: UITableView!
+    @IBOutlet private var loaderView: UIActivityIndicatorView!
     
     private let viewModel: ContributorListViewModel!
+    private let (lifetime, token) = Lifetime.make()
+    
+    private var showError: BindingTarget<String> {
+        return BindingTarget(lifetime: lifetime, action: { [weak self] message in
+            self?.showError(message)
+        })
+    }
     
     // MARK: - Lifecycle
     
@@ -28,6 +39,28 @@ class ContributorListVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configure()
+        bindingViewModel()
+        viewModel.loadContributers()
+    }
+}
+
+// MARK: - Configure
+
+private extension ContributorListVC {
+    func configure() {
+        navigationItem.title = "Contributors"
+        tableView.register(ContributorListCell.self)
+    }
+}
+
+// MARK: - BindingViewModel
+
+private extension ContributorListVC {
+    func bindingViewModel() {
+        tableView.reactive.reloadData <~ viewModel.reload
+        loaderView.reactive.isAnimating <~ viewModel.loading
+        showError <~ viewModel.showError
     }
 }
 
@@ -52,5 +85,14 @@ extension ContributorListVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
+    }
+}
+
+// MARK: - Private
+
+private extension ContributorListVC {
+    func showError(_ error: String) {
+        SVProgressHUD.show(withStatus: error)
+        SVProgressHUD.dismiss(withDelay: 2)
     }
 }

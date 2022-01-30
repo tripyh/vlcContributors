@@ -11,7 +11,7 @@ import Moya
 class ContributorManager {
     private static let provider = MoyaProvider<ContributorService>()
     
-    class func contributors(_ completionHendler: @escaping([Contributor]?, String?) -> Void?) {
+    class func contributors(_ completionHendler: @escaping([Contributor]?, String?) -> Void) {
         provider.request(.contributors) { result in
             switch result {
             case .success(let success):
