@@ -8,22 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		04CA8A4827A71C780088C177 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA8A4727A71C780088C177 /* AppDelegate.swift */; };
-		04CA8A4A27A71C780088C177 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA8A4927A71C780088C177 /* SceneDelegate.swift */; };
-		04CA8A4C27A71C780088C177 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA8A4B27A71C780088C177 /* ViewController.swift */; };
-		04CA8A4F27A71C780088C177 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CA8A4D27A71C780088C177 /* Main.storyboard */; };
 		04CA8A5127A71C7C0088C177 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CA8A5027A71C7C0088C177 /* Assets.xcassets */; };
 		04CA8A5427A71C7C0088C177 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CA8A5227A71C7C0088C177 /* LaunchScreen.storyboard */; };
+		04CA8A5E27A7216C0088C177 /* ContributorListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA8A5D27A7216C0088C177 /* ContributorListVC.swift */; };
+		04CA8A6027A721920088C177 /* ContributorListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04CA8A5F27A721920088C177 /* ContributorListVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04CA8A4427A71C780088C177 /* vlcContributors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vlcContributors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CA8A4727A71C780088C177 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		04CA8A4927A71C780088C177 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		04CA8A4B27A71C780088C177 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		04CA8A4E27A71C780088C177 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04CA8A5027A71C7C0088C177 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04CA8A5327A71C7C0088C177 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04CA8A5527A71C7C0088C177 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04CA8A5D27A7216C0088C177 /* ContributorListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorListVC.swift; sourceTree = "<group>"; };
+		04CA8A5F27A721920088C177 /* ContributorListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContributorListVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +55,45 @@
 			isa = PBXGroup;
 			children = (
 				04CA8A4727A71C780088C177 /* AppDelegate.swift */,
-				04CA8A4927A71C780088C177 /* SceneDelegate.swift */,
-				04CA8A4B27A71C780088C177 /* ViewController.swift */,
-				04CA8A4D27A71C780088C177 /* Main.storyboard */,
-				04CA8A5027A71C7C0088C177 /* Assets.xcassets */,
-				04CA8A5227A71C7C0088C177 /* LaunchScreen.storyboard */,
+				04CA8A5B27A721330088C177 /* Controllers */,
+				04CA8A6227A721C70088C177 /* Images */,
 				04CA8A5527A71C7C0088C177 /* Info.plist */,
+				04CA8A6127A721B80088C177 /* Storyboards */,
 			);
 			path = vlcContributors;
+			sourceTree = "<group>";
+		};
+		04CA8A5B27A721330088C177 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				04CA8A5C27A721400088C177 /* ContributorList */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		04CA8A5C27A721400088C177 /* ContributorList */ = {
+			isa = PBXGroup;
+			children = (
+				04CA8A5D27A7216C0088C177 /* ContributorListVC.swift */,
+				04CA8A5F27A721920088C177 /* ContributorListVC.xib */,
+			);
+			path = ContributorList;
+			sourceTree = "<group>";
+		};
+		04CA8A6127A721B80088C177 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				04CA8A5227A71C7C0088C177 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		04CA8A6227A721C70088C177 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				04CA8A5027A71C7C0088C177 /* Assets.xcassets */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +156,7 @@
 			files = (
 				04CA8A5427A71C7C0088C177 /* LaunchScreen.storyboard in Resources */,
 				04CA8A5127A71C7C0088C177 /* Assets.xcassets in Resources */,
-				04CA8A4F27A71C780088C177 /* Main.storyboard in Resources */,
+				04CA8A6027A721920088C177 /* ContributorListVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +167,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04CA8A4C27A71C780088C177 /* ViewController.swift in Sources */,
 				04CA8A4827A71C780088C177 /* AppDelegate.swift in Sources */,
-				04CA8A4A27A71C780088C177 /* SceneDelegate.swift in Sources */,
+				04CA8A5E27A7216C0088C177 /* ContributorListVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		04CA8A4D27A71C780088C177 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				04CA8A4E27A71C780088C177 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		04CA8A5227A71C7C0088C177 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -293,9 +313,9 @@
 				INFOPLIST_FILE = vlcContributors/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,7 +325,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,9 +340,9 @@
 				INFOPLIST_FILE = vlcContributors/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,7 +352,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

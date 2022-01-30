@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ContributorListVC.swift
 //  vlcContributors
 //
 //  Created by andrey rulev on 30.01.2022.
@@ -7,13 +7,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ContributorListVC: UIViewController {
+    
+    // MARK: - Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
 }
-
