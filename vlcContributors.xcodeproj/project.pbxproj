@@ -12,6 +12,11 @@
 		04CA8A5427A71C7C0088C177 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CA8A5227A71C7C0088C177 /* LaunchScreen.storyboard */; };
 		04CA8A5E27A7216C0088C177 /* ContributorListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA8A5D27A7216C0088C177 /* ContributorListVC.swift */; };
 		04CA8A6027A721920088C177 /* ContributorListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04CA8A5F27A721920088C177 /* ContributorListVC.xib */; };
+		04CA8A6827A7258D0088C177 /* ContributorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA8A6727A7258D0088C177 /* ContributorService.swift */; };
+		04CA8A6A27A725D70088C177 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA8A6927A725D70088C177 /* NetworkProvider.swift */; };
+		04CA8A6D27A726100088C177 /* Config+server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA8A6C27A726100088C177 /* Config+server.swift */; };
+		04CA8A7127A726B10088C177 /* ContributorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA8A7027A726B10088C177 /* ContributorManager.swift */; };
+		04CA8A7427A727970088C177 /* Contributor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA8A7327A727970088C177 /* Contributor.swift */; };
 		1F5E35E75A2F9FE0FA099A66 /* Pods_vlcContributors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC6967C4DFB9494D35AE1688 /* Pods_vlcContributors.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +29,11 @@
 		04CA8A5527A71C7C0088C177 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04CA8A5D27A7216C0088C177 /* ContributorListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorListVC.swift; sourceTree = "<group>"; };
 		04CA8A5F27A721920088C177 /* ContributorListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContributorListVC.xib; sourceTree = "<group>"; };
+		04CA8A6727A7258D0088C177 /* ContributorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorService.swift; sourceTree = "<group>"; };
+		04CA8A6927A725D70088C177 /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		04CA8A6C27A726100088C177 /* Config+server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Config+server.swift"; sourceTree = "<group>"; };
+		04CA8A7027A726B10088C177 /* ContributorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorManager.swift; sourceTree = "<group>"; };
+		04CA8A7327A727970088C177 /* Contributor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contributor.swift; sourceTree = "<group>"; };
 		CC6967C4DFB9494D35AE1688 /* Pods_vlcContributors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vlcContributors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E58BF31716C59089EC8A2D55 /* Pods-vlcContributors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vlcContributors.release.xcconfig"; path = "Target Support Files/Pods-vlcContributors/Pods-vlcContributors.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,6 +72,8 @@
 			isa = PBXGroup;
 			children = (
 				04CA8A4727A71C780088C177 /* AppDelegate.swift */,
+				04CA8A6427A7254C0088C177 /* Classes */,
+				04CA8A6B27A725EC0088C177 /* Config */,
 				04CA8A5B27A721330088C177 /* Controllers */,
 				04CA8A6227A721C70088C177 /* Images */,
 				04CA8A5527A71C7C0088C177 /* Info.plist */,
@@ -101,6 +113,65 @@
 				04CA8A5027A71C7C0088C177 /* Assets.xcassets */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		04CA8A6427A7254C0088C177 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				04CA8A6527A725540088C177 /* Networking */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		04CA8A6527A725540088C177 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				04CA8A6F27A726940088C177 /* Managers */,
+				04CA8A7227A727330088C177 /* Models */,
+				04CA8A6E27A726310088C177 /* Provider */,
+				04CA8A6627A725690088C177 /* Services */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		04CA8A6627A725690088C177 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				04CA8A6727A7258D0088C177 /* ContributorService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		04CA8A6B27A725EC0088C177 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				04CA8A6C27A726100088C177 /* Config+server.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		04CA8A6E27A726310088C177 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				04CA8A6927A725D70088C177 /* NetworkProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		04CA8A6F27A726940088C177 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				04CA8A7027A726B10088C177 /* ContributorManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		04CA8A7227A727330088C177 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04CA8A7327A727970088C177 /* Contributor.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		727F56E89BFEC8078860789E /* Frameworks */ = {
@@ -235,8 +306,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04CA8A6827A7258D0088C177 /* ContributorService.swift in Sources */,
+				04CA8A6A27A725D70088C177 /* NetworkProvider.swift in Sources */,
+				04CA8A7427A727970088C177 /* Contributor.swift in Sources */,
 				04CA8A4827A71C780088C177 /* AppDelegate.swift in Sources */,
 				04CA8A5E27A7216C0088C177 /* ContributorListVC.swift in Sources */,
+				04CA8A6D27A726100088C177 /* Config+server.swift in Sources */,
+				04CA8A7127A726B10088C177 /* ContributorManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
