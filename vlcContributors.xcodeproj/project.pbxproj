@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		046FEC5427B050BC00024074 /* ContributorDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046FEC5327B050BC00024074 /* ContributorDetailVC.swift */; };
+		046FEC5627B0511400024074 /* ContributorDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046FEC5527B0511400024074 /* ContributorDetailVC.xib */; };
+		046FEC5827B051DB00024074 /* ContributorDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046FEC5727B051DB00024074 /* ContributorDetailViewModel.swift */; };
 		04CA8A4827A71C780088C177 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA8A4727A71C780088C177 /* AppDelegate.swift */; };
 		04CA8A5127A71C7C0088C177 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CA8A5027A71C7C0088C177 /* Assets.xcassets */; };
 		04CA8A5427A71C7C0088C177 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CA8A5227A71C7C0088C177 /* LaunchScreen.storyboard */; };
@@ -29,6 +32,9 @@
 
 /* Begin PBXFileReference section */
 		0290F442D60D206EF8C4115B /* Pods-vlcContributors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vlcContributors.debug.xcconfig"; path = "Target Support Files/Pods-vlcContributors/Pods-vlcContributors.debug.xcconfig"; sourceTree = "<group>"; };
+		046FEC5327B050BC00024074 /* ContributorDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorDetailVC.swift; sourceTree = "<group>"; };
+		046FEC5527B0511400024074 /* ContributorDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContributorDetailVC.xib; sourceTree = "<group>"; };
+		046FEC5727B051DB00024074 /* ContributorDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorDetailViewModel.swift; sourceTree = "<group>"; };
 		04CA8A4427A71C780088C177 /* vlcContributors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vlcContributors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CA8A4727A71C780088C177 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04CA8A5027A71C7C0088C177 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -64,6 +70,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		046FEC5227B0509D00024074 /* ContributorDetail */ = {
+			isa = PBXGroup;
+			children = (
+				046FEC5927B0525500024074 /* ViewModel */,
+				046FEC5327B050BC00024074 /* ContributorDetailVC.swift */,
+				046FEC5527B0511400024074 /* ContributorDetailVC.xib */,
+			);
+			path = ContributorDetail;
+			sourceTree = "<group>";
+		};
+		046FEC5927B0525500024074 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				046FEC5727B051DB00024074 /* ContributorDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		04CA8A3B27A71C780088C177 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +123,7 @@
 		04CA8A5B27A721330088C177 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				046FEC5227B0509D00024074 /* ContributorDetail */,
 				04CA8A5C27A721400088C177 /* ContributorList */,
 			);
 			path = Controllers;
@@ -324,6 +349,7 @@
 				04CA8A5127A71C7C0088C177 /* Assets.xcassets in Resources */,
 				04CA8A6027A721920088C177 /* ContributorListVC.xib in Resources */,
 				04CA8A7C27A72A6D0088C177 /* ContributorListCell.xib in Resources */,
+				046FEC5627B0511400024074 /* ContributorDetailVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,8 +405,10 @@
 				04CA8A6827A7258D0088C177 /* ContributorService.swift in Sources */,
 				04CA8A6A27A725D70088C177 /* NetworkProvider.swift in Sources */,
 				04CA8A7A27A72A440088C177 /* ContributorListCell.swift in Sources */,
+				046FEC5827B051DB00024074 /* ContributorDetailViewModel.swift in Sources */,
 				04CA8A7427A727970088C177 /* Contributor.swift in Sources */,
 				04CA8A4827A71C780088C177 /* AppDelegate.swift in Sources */,
+				046FEC5427B050BC00024074 /* ContributorDetailVC.swift in Sources */,
 				04CA8A8527A72E140088C177 /* ReusableViewProtocol.swift in Sources */,
 				04CA8A7727A72A0C0088C177 /* ContributorListViewModel.swift in Sources */,
 				04CA8A8327A72DE90088C177 /* NibLoadableViewProtocol.swift in Sources */,

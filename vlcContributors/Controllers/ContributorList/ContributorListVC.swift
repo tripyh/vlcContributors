@@ -84,7 +84,22 @@ extension ContributorListVC: UITableViewDataSource {
 extension ContributorListVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        let contributor = viewModel.contributor(at: indexPath.row)
+        pushToContributorDetail(contributor)
+    }
+}
+
+// MARK: - Navigation
+
+private extension ContributorListVC {
+    func pushToContributorDetail(_ contributor: Contributor?) {
+        guard let contributorActual = contributor else {
+            return
+        }
         
+        let contributorDetailViewModel = ContributorDetailViewModel(contributor: contributorActual)
+        let contributorDetailVC = ContributorDetailVC(viewModel: contributorDetailViewModel)
+        navigationController?.pushViewController(contributorDetailVC, animated: true)
     }
 }
 
