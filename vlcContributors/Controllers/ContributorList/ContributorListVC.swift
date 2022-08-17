@@ -5,7 +5,6 @@
 //  Created by andrey rulev on 30.01.2022.
 //
 
-import UIKit
 import ReactiveCocoa
 import ReactiveSwift
 import SVProgressHUD
